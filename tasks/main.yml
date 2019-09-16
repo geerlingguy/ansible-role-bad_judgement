@@ -6,6 +6,9 @@
   yum:
     name: stress
     state: present
+    # This parameter requires Ansible 2.8, but this role specifies a
+    # min_ansible_version of 2.4, so it errors out on Ansible < 2.8. SMH.
+    lock_timeout: 5
 
 # This is just mean.
 - name: Make sure the system has something to do.
