@@ -9,13 +9,16 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - all
+        - 7
+        - 8
     - name: Debian
       versions:
-        - all
+        - buster
+        - stretch
     - name: Ubuntu
       versions:
-        - all
+        - bionic
+        - xenial
 
   galaxy_tags:
     - demo
