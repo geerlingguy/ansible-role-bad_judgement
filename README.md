@@ -1,6 +1,8 @@
 Bad Judgement
 =============
 
+[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-bad_judgement.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-bad_judgement)
+
 **DO NOT USE THIS ROLE**. At least not in production. Or on any type of server you care about. Bad things will happen.
 
 This role traces its lineage back to the [Bad Judgement](https://www.drupal.org/project/bad_judgement) module for Drupal. The basic premise is any other role which is never meant to run in production should require this role as a dependency. And then both roles should warn the user to never run them in production.
