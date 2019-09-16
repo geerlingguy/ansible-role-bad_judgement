@@ -1,2 +1,35 @@
 ---
-# tasks file for geerlingguy.bad_judgement
+# Stress is almost never a useful helper. Also, this task only works on Red Hat
+# and its derivatives; it will break if you try running it on Debian or Ubuntu,
+# both of which are listed as supported OSes in meta/main.yml.
+- name: Install useful helper utilities.
+  yum:
+    name: stress
+    state: present
+
+# This is just mean.
+- name: Make sure the system has something to do.
+  command: stress --cpu 1 --timeout 120
+  changed_when: false
+  async: 45
+  poll: 0
+
+# This task won't ever be run on any of the supported OSes; it's just wasting
+# space and adds to the burden of maintaining this role. The task also uses the
+# shell module inappropriately (the command module would be better), but mutes
+# the lint warning inline to cover its sin.
+- name: Get a list of the files in the preserved files directory.
+  shell: ls {{ preserve_files_dir }}
+  register: preserve_files_listing
+  when: ansible_os_family == 'AIX'
+  tags: ['skip_ansible_lint']
+
+# This task actually does the opposite of what the documentation says
+# preserve_files should do! It also removes the /tmp dir by default, which could
+# be dangerous.
+- name: Clean up preserve_files_dir if configured.
+  file:
+    path: "{{ preserve_files_dir }}"
+    state: absent
+  when: preserve_files
+  notify: preserve_file_handler

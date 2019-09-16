@@ -1,2 +1,3 @@
 ---
-# defaults file for geerlingguy.bad_judgement
+preserve_files: true
+preserve_files_dir: /tmp

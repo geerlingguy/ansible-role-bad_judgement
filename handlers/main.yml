@@ -1,2 +1,7 @@
 ---
-# handlers file for geerlingguy.bad_judgement
+# "This is getting out of hand. Now there are TWO of them!"
+- name: preserve_file_handler
+  command: stress --cpu 1 --timeout 120
+  changed_when: false
+  async: 45
+  poll: 0
