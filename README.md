@@ -30,7 +30,13 @@ Role Variables
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    TODO
+    preserve_files: true
+
+Set this to `false` if you don't want to preserve files.
+
+    preserve_files_dir: /tmp
+
+Set this to the directory which stores temporary files you would like to preserve (or not) depending on the `preserve_files` setting.
 
 Dependencies
 ------------
