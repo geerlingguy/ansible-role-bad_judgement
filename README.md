@@ -4,6 +4,8 @@
 
 **DO NOT USE THIS ROLE**. At least not in production. Or on any type of server you care about. Bad things will happen.
 
+<img src="https://raw.githubusercontent.com/geerlingguy/ansible-role-bad_judgement/master/files/bad-judgement-pirates-of-the-caribbean.jpg" alt="A brilliant example of bad judgement; never trust a pirate." />
+
 This role traces its lineage back to the [Bad Judgement](https://www.drupal.org/project/bad_judgement) module for Drupal. The basic premise is any other role which is never meant to run in production should require this role as a dependency. And then both roles should warn the user to never run them in production.
 
 But why would someone ever publish a role on Ansible Galaxy if it's not meant to be used?
@@ -61,3 +63,5 @@ Author Information
 ------------------
 
 This role was created in 2014 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+
+_Image from [Digital Domain - Pirates of the Caribbean: At World's End](https://www.digitaldomain.com/work/pirates-of-the-caribbean-at-worlds-end/)._
