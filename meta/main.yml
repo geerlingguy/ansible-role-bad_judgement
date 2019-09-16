@@ -1,5 +1,6 @@
 galaxy_info:
   author: Jeff Geerling
+  role_name: bad_judgement
   description: DO NOT USE THIS ROLE! It is for demonstration purposes.
   company: Midwestern Mac, LLC
   license: MIT
