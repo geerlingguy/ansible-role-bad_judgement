@@ -1,5 +1,4 @@
-Bad Judgement
-=============
+# Bad Judgement
 
 [![Build Status](https://travis-ci.com/geerlingguy/ansible-role-bad_judgement.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-bad_judgement)
 
@@ -16,8 +15,13 @@ Well, there are two potential reasons:
 
 This role was originally created by [Jeff Geerling](https://www.jeffgeerling.com) for his AnsibleFest Austin 2019 presentation _There's a role for that! How to evaluate community roles for your playbooks_.
 
-Requirements
-------------
+## Judgement vs Judgment
+
+Did you know both spellings are considered correct? This project chose the 'older' spelling over the more common one we use in US English today.
+
+But if you're going to argue more about this project's naming than the fact that you shouldn't be using this project in the first place, _you probably have bad judgement_ ;-)
+
+## Requirements
 
   - Really bad judgement.
 
