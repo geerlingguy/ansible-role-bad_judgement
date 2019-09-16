@@ -4,9 +4,14 @@ services: docker
 
 env:
   global:
-    - ROLE_NAME: bad_judgement
+    - ROLE_NAME=bad_judgement
   matrix:
-    - MOLECULE_DISTRO: centos7
+    - MOLECULE_DISTRO=centos7
+    - MOLECULE_DISTRO=debian10
+
+matrix:
+  allow_failures:
+    - env: MOLECULE_DISTRO=debian10
 
 install:
   # Install test dependencies.
