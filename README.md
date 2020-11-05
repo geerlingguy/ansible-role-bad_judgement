@@ -1,6 +1,6 @@
 # Bad Judgement
 
-[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-bad_judgement.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-bad_judgement)
+[![CI](https://github.com/geerlingguy/ansible-role-bad_judgement/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-bad_judgement/actions?query=workflow%3ACI)
 
 **DO NOT USE THIS ROLE**. At least not in production. Or on any type of server you care about. Bad things will happen.
 
