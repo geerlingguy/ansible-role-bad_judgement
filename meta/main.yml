@@ -9,12 +9,10 @@ galaxy_info:
   platforms:
     - name: Debian
       versions:
-        - buster
-        - stretch
+        - all
     - name: Ubuntu
       versions:
-        - bionic
-        - xenial
+        - all
 
   galaxy_tags:
     - demo
